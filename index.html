@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A sample webpage demonstrating HTML5 semantic structure, accessibility features, and SEO basics">
+    <meta name="keywords" content="HTML5, accessibility, SEO, semantic web, web development">
+    <meta name="author" content="Edeh Chinecherem">
+    <title>HTML5 Semantic Web Page | Accessibility & SEO Basics</title>
+    
+   
+    <link rel="canonical" href="https://example.com/index.html">
+    
+    
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+   
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    
+    <header role="banner">
+        <h1>HTML5 Semantic Web Page</h1>
+        <p>Demonstrating Accessibility & SEO Best Practices</p>
+    </header>
+    
+    
+    <nav role="navigation" aria-label="Main navigation">
+        <h2 class="visually-hidden">Main Navigation</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    
+    <main id="main-content" role="main">
+        
+        <article>
+            <header>
+                <h2>The Importance of Semantic HTML</h2>
+                <p>Published on <time datetime="2023-10-15">October 15, 2023</time></p>
+            </header>
+            
+            <section>
+                <h3>What is Semantic HTML?</h3>
+                <p>Semantic HTML refers to the use of HTML markup to reinforce the meaning of the content rather than just define its appearance. Elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> clearly describe their purpose.</p>
+                
+                <figure>
+                    <img src="semantic-html.jpg" alt="Diagram showing HTML5 semantic structure with header, nav, main, and footer sections" width="600" height="400">
+                    <figcaption>HTML5 Semantic Document Structure</figcaption>
+                </figure>
+            </section>
+            
+            <section>
+                <h3>Benefits of Semantic Markup</h3>
+                <ul>
+                    <li><strong>Accessibility:</strong> Screen readers can better interpret page structure.</li>
+                    <li><strong>SEO:</strong> Search engines understand content hierarchy and importance.</li>
+                    <li><strong>Maintainability:</strong> Code is easier to read and update.</li>
+                    <li><strong>Future Compatibility:</strong> Standards-compliant code works across browsers.</li>
+                </ul>
+            </section>
+        </article>
+        
+        
+        <aside aria-label="Related information">
+            <h2>Related Topics</h2>
+            <section>
+                <h3>Web Accessibility Guidelines</h3>
+                <p>Learn about WCAG standards to make your websites accessible to all users.</p>
+            </section>
+            <section>
+                <h3>SEO Best Practices</h3>
+                <p>Discover techniques to improve your website's search engine visibility.</p>
+            </section>
+        </aside>
+    </main>
+    
+   
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact Us</h2>
+        <form action="/submit-form" method="post">
+            <fieldset>
+                <legend>Your Information</legend>
+                
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </section>
+    
+    
+    <footer role="contentinfo">
+        <h2 class="visually-hidden">Footer Information</h2>
+        
+        <section aria-label="Copyright information">
+            <p>&copy; 2023 HTML5 Semantic Example. All rights reserved.</p>
+        </section>
+        
+        <section aria-label="Social media links">
+            <h3>Connect With Us</h3>
+            <ul>
+                <li><a href="https://twitter.com/example" aria-label="Twitter">Twitter</a></li>
+                <li><a href="https://facebook.com/example" aria-label="Facebook">Facebook</a></li>
+                <li><a href="https://linkedin.com/company/example" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </section>
+        
+        <section aria-label="Accessibility statement">
+            <h3>Accessibility</h3>
+            <p>We are committed to making our website accessible to all users.</p>
+            <a href="/accessibility">Accessibility Statement</a>
+        </section>
+    </footer>
+</body>
+</html>
